@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: webapp-container
-          image: aymenzarour/webapp:latest
+          image: public.ecr.aws/nginx/nginx:stable-perl
 ---
 apiVersion: v1
 kind: Service
