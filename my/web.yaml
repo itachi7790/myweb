@@ -19,10 +19,6 @@ spec:
         image: public.ecr.aws/nginx/nginx:latest
         ports:
         - containerPort: 80
-        securityContext:
-          runAsUser: 1000
-          runAsGroup: 1000
-          fsGroup: 1000
         volumeMounts:
         - name: temp-storage
           mountPath: /var/cache/nginx
